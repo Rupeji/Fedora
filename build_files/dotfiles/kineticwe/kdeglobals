@@ -133,7 +133,8 @@ ForegroundVisited=250,222,188
 [General]
 ColorScheme=noctalia
 Name=noctalia
-TerminalApplication=kitty
+TerminalApplication=alacritty
+shadeSortColumn=true
 
 [Icons]
 Theme=Breeze-Round-Chameleon Dark Icons
@@ -156,8 +157,8 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=true
-Speedbar Width=144
+Sort reversed=false
+Speedbar Width=133
 View Style=DetailTree
 
 [WM]
