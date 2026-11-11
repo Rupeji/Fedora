@@ -8,11 +8,11 @@ if command -v starship > /dev/null
     starship init fish | source
 end
 
-# Abreviaciones útiles para gestionar Bazzite cómodamente (Corregidas sin espacios)
+# Abreviaciones útiles para gestionar Fedora 45 cómodamente
 abbr -a actualizar-flatpak 'flatpak update -y'
-abbr -a limpieza           'flatpak uninstall --unused -y && sudo rpm-ostree cleanup -m'
-abbr -a actualizar-sistema 'sudo rpm-ostree upgrade'
-abbr -a reparar 'sudo rpm-ostree cleanup --repomd'
+abbr -a limpieza           'flatpak uninstall --unused -y && sudo dnf autoremove -y && sudo dnf clean all'
+abbr -a actualizar-sistema 'sudo dnf upgrade --refresh'
+abbr -a reparar            'sudo dnf clean metadata && sudo dnf makecache'
 abbr -a actualizar-todo    'topgrade'
 
 # Función para listar los comandos personalizados
