@@ -1,0 +1,3 @@
+[theme.templates.user.luciole]
+input_path = "/home/inhumano/.config/noctalia-kwe/templates/luciole.toml"
+output_path = "/home/inhumano/.config/luciole/colors.toml"
