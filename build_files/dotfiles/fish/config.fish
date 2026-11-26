@@ -11,7 +11,7 @@ end
 # Abreviaciones útiles para gestionar Fedora 45 cómodamente
 abbr -a actualizar-flatpak 'flatpak update -y'
 abbr -a limpieza           'flatpak uninstall --unused -y && sudo dnf autoremove -y && sudo dnf clean all'
-abbr -a mantenimiento      'sudo akmods --force && flatpak update -y'
+abbr -a mantenimiento      'sudo akmods --force && sudo dracut --force && flatpak update -y'
 abbr -a comprobar-actualizaciones 'sudo dnf check-update'
 abbr -a actualizar-sistema 'sudo dnf upgrade --refresh && flatpak update -y'
 abbr -a reparar            'sudo dnf clean metadata && sudo dnf makecache'
