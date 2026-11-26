@@ -25,22 +25,39 @@ enabled = true
 
 [desktop_widgets]
 schema_version = 2
-widget_order = []
+widget_order = [ "desktop-widget-0000000000000002" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
-    visible = true
+    visible = false
 
-    [desktop_widgets.widget]
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 192.0
+    box_width = 192.0
+    cx = 512.0
+    cy = 572.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "inhumano/audio-molon:audio-molon-desktop"
 
 [dock]
 concave_edge_corners = false
 enabled = true
-launcher_custom_image = "/home/inhumano/Imágenes/Iconos/bazzitescribbled.png"
+launcher_custom_image = "/home/inhumano/Imágenes/Iconos/Scribbled-Fedora.png"
 launcher_position = "start"
 margin_edge = 5
-pinned = [ "nemo", "kitty", "org.mozilla.firefox", "com.bambulab.BambuStudio", "discord", "steam", "dev.kineticwe.Settings" ]
+pinned = [
+    "dev.noctalia.luciole",
+    "kitty",
+    "com.bambulab.BambuStudio",
+    "org.mozilla.firefox",
+    "discord",
+    "steam",
+    "dev.kineticwe.Settings"
+]
 reserve_space = false
 show_dots = true
 smart_auto_hide = true
@@ -52,8 +69,9 @@ address = "Mallorca"
 wallpaper = "/home/inhumano/Pictures/Wallpapers/0005.jpg"
 
 [lockscreen_widgets]
+enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
+widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -147,8 +165,12 @@ source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "kineticwe", "kitty", "niri", "qt", "luciole" ]
+    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "kineticwe", "kitty", "niri", "qt" ]
     community_ids = [ "discord", "fastfetch" ]
+
+        [theme.templates.user.luciole]
+        input_path = "/home/inhumano/.config/noctalia-kwe/templates/luciole.toml"
+        output_path = "/home/inhumano/.config/luciole/colors.toml"
 
 [wallpaper]
 directory = "/home/inhumano/Imágenes/Wallpapers"
