@@ -66,7 +66,7 @@ smart_auto_hide = true
 address = "Mallorca"
 
 [lockscreen]
-wallpaper = "/home/inhumano/Pictures/Wallpapers/0005.jpg"
+wallpaper = "/home/inhumano/Imágenes/Wallpapers/0005.jpg"
 
 [lockscreen_widgets]
 enabled = false
