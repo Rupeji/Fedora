@@ -20,7 +20,7 @@ abbr -a reparar            'sudo dnf clean metadata && sudo dnf makecache'
 # Función para listar los comandos personalizados
 function comandos --description "Muestra la lista de alias personalizados y su explicación"
     echo (set_color --bold blue)"=== COMANDOS PERSONALIZADOS ==="(set_color normal)
-    echo (set_color green)"mantenimiento             "(set_color normal)": Script del sistema. Actualiza Fedora, Flatpaks, recompila NVIDIA, limpia kernels viejos y caché.USAR CON SUDO DELANTE"
+    echo (set_color green)"mantenimiento             "(set_color normal)": Script del sistema que requiere SUDO. Actualiza Fedora, Flatpaks, recompila NVIDIA, limpia kernels viejos y caché."
     echo (set_color green)"actualizar-flatpak        "(set_color normal)": Actualiza únicamente los Flatpaks de forma manual si tienes prisa."
     echo (set_color green)"comprobar-actualizaciones "(set_color normal)": Comprueba si hay actualizaciones pendientes sin instalarlas."
     echo (set_color green)"limpieza                  "(set_color normal)": Limpieza rápida de residuos de Flatpak y paquetes huérfanos."
